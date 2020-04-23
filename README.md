@@ -11,7 +11,7 @@ This article presents an automatic method to identify four orientations in pedia
 * JSRT : http://db.jsrt.or.jp/eng.php
 
 
-# Requirements
+## Requirements
 
 The main requirements are listed below:
 
