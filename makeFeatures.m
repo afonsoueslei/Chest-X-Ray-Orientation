@@ -3,12 +3,14 @@
 %   U           = upright
 %   L           = left rotated
 %   R           = right rotated
-%   mu          = ? 
-%   sigma       = ?
-%   mu_hor      = ?_hor
-%   mu_ver      = ?_ver
+%   mu          = mean 
+%   sigma       = sigma
+%   mu_hor      = mean horizontal
+%   mu_ver      = mena vertical
 %   O           = O(m,n)
 %   Ox          = O*
+%   Irgb        = input image in RGB color
+
 function FEAT = makeFeatures(Irgb)
 %% Pre-processing
     scale = 512;    
@@ -32,8 +34,8 @@ function FEAT = makeFeatures(Irgb)
     
     FEAT(:,1) = mu_ver > mu_hor;        
     
-    %subplot(242);  imshow([ ones(m,t*2)*255, Rx(:, t*2:t*3), ones(m,t*2)*255]); xlabel('R*´s vertical slice');
-    %subplot(243);  imshow([ ones(t*2,n)*255; Rx(t*2:t*3, :);ones(t*2,n)*255,]); xlabel('R*´s horizontal slice');
+    %subplot(242);  imshow([ ones(m,t*2)*255, Rx(:, t*2:t*3), ones(m,t*2)*255]); xlabel('R*Â´s vertical slice');
+    %subplot(243);  imshow([ ones(t*2,n)*255; Rx(t*2:t*3, :);ones(t*2,n)*255,]); xlabel('R*Â´s horizontal slice');
     
 %%  build kernel by Santosh et al.
     sigma = 1;  mu = 0;    len = 9; theta = 30;
