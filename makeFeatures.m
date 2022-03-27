@@ -26,7 +26,7 @@ function FEAT = makeFeatures(Irgb)
   
     %figure; subplot(241); imshow(Rx); xlabel('R*');
     
-%% X(1) feature	(1 THE BEST) 
+%% X(1) feature	(1 THE BEST)
     Rx_ver = Rx(:, t*2:t*3);
     Rx_hor = Rx(t*2:t*3, :);
 	mu_ver = mean(mean(Rx_ver,1));
@@ -54,7 +54,7 @@ function FEAT = makeFeatures(Irgb)
     
 %     subplot(245);  imshow(edg); xlabel('edg');
 
- %% X(2) feature (2 BETTER) 
+ %% X(2) feature (2 BETTER)
  %  If 1 upright otherwise upside-down
     O_hor       = conv2( edg_hor, g, 'same' );     
     E_hor      = bwskel(bwareaopen(imbinarize(O_hor,.99),tam)); %opening and skeleton
@@ -70,7 +70,7 @@ function FEAT = makeFeatures(Irgb)
     
 %     subplot(246);  imshow([ ones(t,n); E; ones(t,n)]); xlabel('E');
     
-%% X(3) feature  (3 BETTER) 
+%% X(3) feature  (3 BETTER)
 %  If 1 right-rotated otherwise right-rotated
     gr     = imrotate(g,90);
     Or_ver     = conv2( edg_ver, gr, 'same' );     
