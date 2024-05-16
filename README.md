@@ -3,8 +3,8 @@
 - [Method](#chest-x-ray-orientation)
 - [Dataset](#link-to-some-datasets-used-in-our-method)
 - [Requirements](#requirements) 
-- [Production](#production)
-- 
+- [Production](#related-paper)
+  
 
 # Chest-X-Ray-Orientation
 
@@ -28,6 +28,7 @@ The main requirements are listed below:
 * Imaging processing and computer vision
 
 
+## Related paper
 <object data="https://ww2.inf.ufg.br/webmail/horde/gollem/view.php?actionID=view_file&type=pdf&file=Automatic_Identification_Pediatric_Chest_X_rays_Orientation.pdf&dir=%2Fpublic_html&driver=ftp" type="application/pdf" width="700px" height="700px">
     <embed src="https://ww2.inf.ufg.br/webmail/horde/gollem/view.php?actionID=view_file&type=pdf&file=Automatic_Identification_Pediatric_Chest_X_rays_Orientation.pdf&dir=%2Fpublic_html&driver=ftp">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://ww2.inf.ufg.br/webmail/horde/gollem/view.php?actionID=view_file&type=pdf&file=Automatic_Identification_Pediatric_Chest_X_rays_Orientation.pdf&dir=%2Fpublic_html&driver=ftp">Download PDF</a>.</p>
